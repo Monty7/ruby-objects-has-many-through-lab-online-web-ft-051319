@@ -23,9 +23,7 @@ class Doctor
   end
   
   def patients
-    Appointment.all.collect do |patient|
+    Appointment.all.each do |patient, x|
       binding.pry
-      if patient.patient == self.patient
-    end
   end
 end
