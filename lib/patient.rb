@@ -15,4 +15,12 @@ class Patient
     Appointment.new(patient)
   end
   
+  def appointments
+    
+  end
+  
+  def doctors
+    
+  end
+  
 end
