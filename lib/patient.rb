@@ -16,7 +16,10 @@ class Patient
   end
   
   def appointments
-    
+    Appointment.all.select do |selection|
+      #binding.pry
+      selection.patient.name == self.name
+    end
   end
   
   def doctors
