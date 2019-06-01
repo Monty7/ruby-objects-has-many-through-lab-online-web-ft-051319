@@ -26,7 +26,7 @@ class Doctor
    
       self.appointments.collect do |appointment|
         # binding.pry
-         appointment == doc_pat
+         appointment.patient
       end
   
   end
