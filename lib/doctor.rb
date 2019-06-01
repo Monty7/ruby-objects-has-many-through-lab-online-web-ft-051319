@@ -25,5 +25,6 @@ class Doctor
   def patients
     Appointment.all.each do |patient, x|
       binding.pry
+    end
   end
 end
