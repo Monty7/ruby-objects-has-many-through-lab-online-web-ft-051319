@@ -24,6 +24,7 @@ class Doctor
   
   def patients
     self.appointments.collect do |patient|
+      binding.pry
       patient
     end
   end
