@@ -26,7 +26,8 @@ class Doctor
     Appointment.all.each do |patients|
      
       self.appointments.collect do |doc_pat|
-         binding.pry
+        # binding.pry
+         patients == doc_pat
       end
     end
   end
