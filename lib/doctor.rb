@@ -24,10 +24,9 @@ class Doctor
   
   def patients
    
-     
-      self.appointments.collect do ||
+      self.appointments.collect do |appointment|
         # binding.pry
-         patients == doc_pat
+         appointment == doc_pat
       end
   
   end
