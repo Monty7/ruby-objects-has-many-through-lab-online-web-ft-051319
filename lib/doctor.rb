@@ -19,6 +19,7 @@ class Doctor
    
     Appointment.all.select do |selection|
       binding.pry
+      selection.doctor.name == self
     end
   end
 end
