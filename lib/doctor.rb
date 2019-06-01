@@ -21,4 +21,8 @@ class Doctor
       selection.doctor.name == self.name
     end
   end
+  
+  def patients
+    
+  end
 end
