@@ -24,7 +24,10 @@ class Doctor
   
   def patients
     Appointment.all.each do |patient, x|
-      binding.pry
+     
+      self.appointments.collect do |x, y|
+         binding.pry
+      end
     end
   end
 end
