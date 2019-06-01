@@ -23,7 +23,7 @@ class Doctor
   end
   
   def patients
-    Patient.all.each do |patients|
+    Patient.all.collect do |patients|
      
       self.appointments.collect do |doc_pat|
         # binding.pry
