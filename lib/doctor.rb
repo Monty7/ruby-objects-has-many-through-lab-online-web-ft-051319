@@ -17,5 +17,8 @@ class Doctor
   
   def appointments
     binding.pry
+    Appointment.all.select do |selection|
+      binding.pry
+    end
   end
 end
